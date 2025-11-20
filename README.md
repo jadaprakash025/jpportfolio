@@ -45,7 +45,7 @@ Or access the online demo here: [Live Demo](https://jadaprakash025.github.io/jpp
 
 ## 📬 Contact
 
-- Email: aminehamzaoui1925@gmail.com   
+- Email: jadaprakash025@gmail.com   
 - Location: Boumerdès, Algeria  
 - LinkedIn: [LinkedIn]()  
 - GitHub: [GitHub]()  
