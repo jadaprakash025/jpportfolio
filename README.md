@@ -39,7 +39,7 @@ Or access the online demo here: [Live Demo](https://jadaprakash025.github.io/jpp
 1. **Clone this repository**
    ```bash
    git clone https://github.com/
-   cd Sabo
+   cd 
    
 ---
 
