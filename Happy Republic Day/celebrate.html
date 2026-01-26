@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Celebrate Freedom 🇮🇳</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(270deg, #ff9933, #ffffff, #138808);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+    background: rgba(0,0,0,0.75);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    color: #ff9933;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #138808;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 120px;
+    animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #000080;
+    margin: 20px 0;
+}
+
+/* Sections */
+section {
+    background: rgba(255,255,255,0.9);
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+section h2 {
+    color: #ff9933;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ff9933, #138808);
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.95);
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h2 id="nav_title">🇮🇳 Republic Day</h2>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="navbar">
+        <a href="#about" id="nav_about" onclick="toggleMenu()">About</a>
+        <a href="#history" id="nav_history" onclick="toggleMenu()">History</a>
+        <a href="#constitution" id="nav_constitution" onclick="toggleMenu()">Constitution</a>
+        <a href="#heroes" id="nav_heroes" onclick="toggleMenu()">Freedom Fighters</a>
+        <a href="Happy Republic Day.html" id="nav_home" onclick="toggleMenu()">Home</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg">
+    <h1 id="title_main">Celebrate Freedom</h1>
+    <p id="subtitle_main">Proud to be Indian 🇮🇳 | Happy Republic Day</p>
+</div>
+
+<section id="about">
+    <h2 id="about_title">About Republic Day</h2>
+    <p id="about_text">Republic Day is celebrated on 26th January every year in India to honor the Constitution.</p>
+</section>
+
+<section id="history">
+    <h2 id="history_title">History</h2>
+    <p id="history_text">India got independence on 15 August 1947, but the Constitution came into force on 26 January 1950.</p>
+</section>
+
+<section id="constitution">
+    <h2 id="constitution_title">Indian Constitution</h2>
+    <p id="constitution_text">The Constitution of India is the longest written constitution in the world. Dr. B. R. Ambedkar is its architect.</p>
+</section>
+<section id="heroes">
+    <h2 id="heroes_title">Freedom Fighters</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            
+            <img src="gandh.jpg" alt="Mahatma Gandhi">
+            <h3 id="gandhi">Mahatma Gandhi</h3>
+            <p id="gandhi_desc">Leader of India's freedom movement and pioneer of non-violence.</p>
+        </div>
+
+        <div class="card">
+            <img src="bhagatsing.jpg" alt="Bhagat Singh">
+            <h3 id="bhagat">Bhagat Singh</h3>
+            <p id="bhagat_desc">Brave revolutionary who sacrificed his life for the nation.</p>
+        </div>
+
+        <div class="card">
+            <img src="subhas.jpg" alt="Subhas Chandra Bose">
+            <h3 id="bose">Subhas Chandra Bose</h3>
+            <p id="bose_desc">Founder of Azad Hind Fauj and a great nationalist leader.</p>
+        </div>
+
+        <div class="card">
+            <img src="sardarpatel.jpg" alt="Sardar Patel">
+            <h3 id="patel">Sardar Patel</h3>
+            <p id="patel_desc">Iron Man of India who united the nation.</p>
+        </div>
+
+    </div>
+
+    <a class="btn" id="back_btn" href="Happy Republic Day.html">⬅ Back to Home</a>
+</section>
+
+
+
+<footer>
+    <div style="margin-bottom:10px;">
+        🌐 Select Language:
+        <select onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+        </select>
+    </div>
+    🇮🇳 © 2026 | Designed with ❤️ by <b>Jada Prakash</b> | Jai Hind 🇮🇳
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("show");
+}
+
+const translations = {
+    en: {
+        nav_title: "🇮🇳 Republic Day",
+        nav_about: "About",
+        nav_history: "History",
+        nav_constitution: "Constitution",
+        nav_heroes: "Freedom Fighters",
+        nav_home: "Home",
+
+        title_main: "Celebrate Freedom",
+        subtitle_main: "Proud to be Indian 🇮🇳 | Happy Republic Day",
+
+        about_title: "About Republic Day",
+        about_text: "Republic Day is celebrated on 26th January every year in India to honor the Constitution.",
+
+        history_title: "History",
+        history_text: "India got independence on 15 August 1947, but the Constitution came into force on 26 January 1950.",
+
+        constitution_title: "Indian Constitution",
+        constitution_text: "The Constitution of India is the longest written constitution in the world. Dr. B. R. Ambedkar is its architect.",
+
+        heroes_title: "Freedom Fighters",
+
+        gandhi: "Mahatma Gandhi",
+        gandhi_desc: "Leader of India's freedom movement and pioneer of non-violence.",
+
+        bhagat: "Bhagat Singh",
+        bhagat_desc: "Brave revolutionary who sacrificed his life for the nation.",
+
+        bose: "Subhas Chandra Bose",
+        bose_desc: "Founder of Azad Hind Fauj and a great nationalist leader.",
+
+        patel: "Sardar Patel",
+        patel_desc: "Iron Man of India who united the nation.",
+
+        back_btn: "⬅ Back to Home"
+    },
+
+    hi: {
+        nav_title: "🇮🇳 गणतंत्र दिवस",
+        nav_about: "परिचय",
+        nav_history: "इतिहास",
+        nav_constitution: "संविधान",
+        nav_heroes: "स्वतंत्रता सेनानी",
+        nav_home: "होम",
+
+        title_main: "स्वतंत्रता का उत्सव",
+        subtitle_main: "गर्व से भारतीय 🇮🇳 | गणतंत्र दिवस की शुभकामनाएं",
+
+        about_title: "गणतंत्र दिवस के बारे में",
+        about_text: "भारत में हर साल 26 जनवरी को गणतंत्र दिवस मनाया जाता है।",
+
+        history_title: "इतिहास",
+        history_text: "भारत को 15 अगस्त 1947 को आज़ादी मिली, लेकिन संविधान 26 जनवरी 1950 को लागू हुआ।",
+
+        constitution_title: "भारतीय संविधान",
+        constitution_text: "भारतीय संविधान दुनिया का सबसे लंबा लिखित संविधान है। इसके निर्माता डॉ. भीमराव अंबेडकर हैं।",
+
+        heroes_title: "स्वतंत्रता सेनानी",
+
+        gandhi: "महात्मा गांधी",
+        gandhi_desc: "भारत के स्वतंत्रता आंदोलन के नेता और अहिंसा के जनक।",
+
+        bhagat: "भगत सिंह",
+        bhagat_desc: "वीर क्रांतिकारी जिन्होंने देश के लिए अपने प्राण बलिदान किए।",
+
+        bose: "सुभाष चंद्र बोस",
+        bose_desc: "आजाद हिंद फौज के संस्थापक और महान राष्ट्रवादी नेता।",
+
+        patel: "सरदार वल्लभभाई पटेल",
+        patel_desc: "भारत के लौह पुरुष जिन्होंने देश को एक किया।",
+
+        back_btn: "⬅ होम पर जाएं"
+    },
+
+    gu: {
+        nav_title: "🇮🇳 ગણતંત્ર દિવસ",
+        nav_about: "વિશે",
+        nav_history: "ઇતિહાસ",
+        nav_constitution: "બંધારણ",
+        nav_heroes: "સ્વતંત્રતા સેનાની",
+        nav_home: "હોમ",
+
+        title_main: "સ્વતંત્રતાનો ઉત્સવ",
+        subtitle_main: "ગર્વથી ભારતીય 🇮🇳 | ગણતંત્ર દિવસની શુભેચ્છા",
+
+        about_title: "ગણતંત્ર દિવસ વિશે",
+        about_text: "ભારતમાં દર વર્ષે 26 જાન્યુઆરીએ ગણતંત્ર દિવસ ઉજવવામાં આવે છે.",
+
+        history_title: "ઇતિહાસ",
+        history_text: "ભારતને 15 ઑગસ્ટ 1947એ સ્વતંત્રતા મળી, પરંતુ બંધારણ 26 જાન્યુઆરી 1950એ લાગુ થયું.",
+
+        constitution_title: "ભારતીય બંધારણ",
+        constitution_text: "ભારતીય બંધારણ દુનિયાનું સૌથી લાંબું લખિત બંધારણ છે. ડૉ. બી. આર. આંબેડકર તેના રચયિતા છે.",
+
+        heroes_title: "સ્વતંત્રતા સેનાની",
+
+        gandhi: "મહાત્મા ગાંધી",
+        gandhi_desc: "ભારતના સ્વતંત્રતા આંદોલનના નેતા અને અહિંસાના પ્રણેતા.",
+
+        bhagat: "ભગત સિંહ",
+        bhagat_desc: "વીર ક્રાંતિકારી જેમણે દેશ માટે બલિદાન આપ્યું.",
+
+        bose: "સુભાષચંદ્ર બોઝ",
+        bose_desc: "આઝાદ હિંદ ફોજના સ્થાપક અને મહાન રાષ્ટ્રવાદી નેતા.",
+
+        patel: "સરદાર વલ્લભભાઈ પટેલ",
+        patel_desc: "ભારતના લોખંડી પુરુષ જેમણે દેશને એક કર્યો.",
+
+        back_btn: "⬅ હોમ પર જાઓ"
+    }
+};
+
+function changeLanguage(lang) {
+    for (let key in translations[lang]) {
+        if (document.getElementById(key)) {
+            document.getElementById(key).innerText = translations[lang][key];
+        }
+    }
+}
+</script>
+
+</body>
+</html>

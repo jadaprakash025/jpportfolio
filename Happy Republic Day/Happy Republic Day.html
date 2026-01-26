@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Republic Day 🇮🇳</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(270deg, #ff9933, #ffffff, #138808);
+    background-size: 600% 600%;
+    animation: bgMove 8s ease infinite;
+}
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(2px);
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 60px);
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff9933, #000080, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% { filter: drop-shadow(0 0 5px orange); }
+    50% { filter: drop-shadow(0 0 15px green); }
+    100% { filter: drop-shadow(0 0 5px blue); }
+}
+
+h2 {
+    margin-top: 15px;
+    color: #000;
+    font-size: 24px;
+}
+
+.chakra {
+    margin: 30px auto;
+    width: 120px;
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff9933, #138808);
+    color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="overlay">
+    <div class="card">
+        <h1 id="title">Happy Republic Day</h1>
+        <h2 id="subtitle">26 January 2026 - Proud to be Indian</h2>
+
+        <img class="chakra" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg">
+
+        <br>
+
+        <a href="celebrate.html">
+            <button class="btn" id="btn_text">Celebrate Freedom</button>
+        </a>
+    </div>
+</div>
+
+<footer>
+    <div style="margin-bottom:10px;">
+        🌐 Select Language:
+        <select onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="gu">ગુજરાતી</option>
+        </select>
+    </div>
+
+    🇮🇳 © 2026 | Designed with ❤️ by <b>Jada Prakash</b> | Jai Hind 🇮🇳
+</footer>
+
+<script>
+const data = {
+    en: {
+        title: "Happy Republic Day",
+        subtitle: "26 January 2026 - Proud to be Indian",
+        btn: "Celebrate Freedom"
+    },
+    hi: {
+        title: "गणतंत्र दिवस की शुभकामनाएं",
+        subtitle: "26 जनवरी 2026 - गर्व से भारतीय",
+        btn: "स्वतंत्रता का उत्सव मनाएं"
+    },
+    gu: {
+        title: "ગણતંત્ર દિવસની શુભેચ્છા",
+        subtitle: "26 જાન્યુઆરી 2026 - ગર્વથી ભારતીય",
+        btn: "સ્વતંત્રતાનો ઉત્સવ"
+    }
+};
+
+function changeLanguage(lang) {
+    document.getElementById("title").innerText = data[lang].title;
+    document.getElementById("subtitle").innerText = data[lang].subtitle;
+    document.getElementById("btn_text").innerText = data[lang].btn;
+}
+</script>
+
+</body>
+</html>
