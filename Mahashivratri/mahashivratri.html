@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahashivratri 2026 | Lord Shiva & Divine Family</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,sans-serif}
+
+body{
+  background:radial-gradient(circle at top,#0a1a2f,#000814);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* Triranga Animation */
+.triranga{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(120deg,rgba(255,153,51,.25),rgba(255,255,255,.15),rgba(19,136,8,.25));
+  background-size:400% 400%;
+  animation:tri 10s ease infinite;
+  z-index:-1;
+}
+@keyframes tri{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Navbar */
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(0,0,0,.65);
+  backdrop-filter:blur(10px);
+}
+.nav-container{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+}
+.logo{
+  color:#ffd166;
+  font-weight:700;
+  font-size:1.1rem;
+}
+nav ul{
+  display:flex;
+  gap:22px;
+  list-style:none;
+}
+nav a{
+  color:#7fffd4;
+  text-decoration:none;
+  font-weight:600;
+}
+nav a:hover{color:#ffd166}
+.menu-btn{
+  display:none;
+  font-size:1.8rem;
+  color:#7fffd4;
+  cursor:pointer;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:90px 20px 40px;
+}
+header h1{
+  font-size:clamp(2.4rem,5vw,3.8rem);
+  background:linear-gradient(90deg,#ff9f1c,#7fffd4,#2ec4b6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+header p{
+  margin-top:10px;
+  opacity:.9;
+}
+
+/* Om Circle */
+.shiva{
+  display:flex;
+  justify-content:center;
+  margin:40px 0;
+}
+.shiva-circle{
+  width:260px;
+  height:260px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#1b263b,#0d1b2a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 60px rgba(0,255,255,.6);
+  animation:glow 3s infinite alternate;
+}
+@keyframes glow{
+  from{box-shadow:0 0 25px rgba(0,255,255,.3)}
+  to{box-shadow:0 0 70px rgba(0,255,255,.7)}
+}
+.shiva-circle span{
+  font-size:3.5rem;
+  color:#7fffd4;
+}
+
+/* Sections */
+section{
+  padding:70px 20px;
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+section h2{
+  font-size:2.1rem;
+  color:#ffd166;
+  margin-bottom:15px;
+}
+section p{
+  max-width:900px;
+  margin:auto;
+  line-height:1.9;
+  opacity:.9;
+}
+
+/* Cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:24px;
+  margin-top:36px;
+}
+.card{
+  background:rgba(255,255,255,.06);
+  padding:22px;
+  border-radius:18px;
+  backdrop-filter:blur(8px);
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 40px rgba(0,0,0,.4);
+}
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:12px;
+}
+.card h3{
+  color:#7fffd4;
+  margin-bottom:6px;
+}
+
+/* Timeline */
+.timeline{
+  margin-top:36px;
+  text-align:left;
+}
+.timeline div{
+  padding:14px 18px;
+  margin-bottom:14px;
+  border-left:3px solid #2ec4b6;
+  background:rgba(255,255,255,.04);
+  border-radius:10px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:26px;
+  opacity:.75;
+  border-top:1px solid rgba(255,255,255,.12);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  nav ul{
+    position:absolute;
+    top:60px;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,.9);
+    flex-direction:column;
+    align-items:center;
+    display:none;
+    padding:20px 0;
+  }
+  nav ul.show{display:flex}
+  .menu-btn{display:block}
+}
+
+@media(max-width:500px){
+  .shiva-circle{width:200px;height:200px}
+  .shiva-circle span{font-size:2.8rem}
+  section{padding:55px 15px}
+}
+
+.mute-btn{
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  background:rgba(0,0,0,0.6);
+  border:none;
+  border-radius:50%;
+  width:40px;
+  height:40px;
+  font-size:18px;
+  color:#7fffd4;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.mute-btn:hover{
+  background:rgba(255,255,255,0.15);
+}
+
+.shiva{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:70px 0;
+  width:320px;
+  height:320px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Center Om Circle */
+.shiva-circle{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#1b263b,#0d1b2a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 0 60px rgba(0,255,255,.7);
+  animation:glow 3s infinite alternate;
+  z-index:2;
+}
+
+.shiva-circle span{
+  font-size:3.6rem;
+  color:#7fffd4;
+}
+
+/* Orbit Circles */
+.orbit{
+  position:absolute;
+  border-radius:50%;
+  border:1px dashed rgba(127,255,212,0.5);
+  animation:spin linear infinite;
+}
+
+/* Different sizes + speeds */
+.orbit1{
+  width:260px;
+  height:260px;
+  animation-duration:14s;
+}
+
+.orbit2{
+  width:300px;
+  height:300px;
+  border-color:rgba(255,209,102,0.5);
+  animation-duration:20s;
+  animation-direction:reverse;
+}
+
+.orbit3{
+  width:340px;
+  height:340px;
+  border-color:rgba(46,196,182,0.4);
+  animation-duration:26s;
+}
+
+/* Rotation */
+@keyframes spin{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+/* Glow pulse */
+@keyframes glow{
+  from{box-shadow:0 0 25px rgba(0,255,255,.4)}
+  to{box-shadow:0 0 80px rgba(0,255,255,.9)}
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="triranga"></div>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">🕉 Mahashivratri 2026</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <ul id="menu">
+        <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#family">Family</a></li>
+      <li><a href="#rituals">Rituals</a></li>
+      <li><a href="#temples">Temples</a></li>
+      <li><a href="#mantra">Mantras</a></li>
+      <li><a href="#symbols">Symbols</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header  id="home" >
+  <h1>Mahashivratri 2026</h1>
+  <p>The Sacred Night of Lord Shiva & His Divine Family</p>
+</header>
+
+<div class="shiva">
+  <div class="orbit orbit1"></div>
+  <div class="orbit orbit2"></div>
+  <div class="orbit orbit3"></div>
+
+  <div class="shiva-circle">
+    <span>ॐ</span>
+  </div>
+</div>
+
+<br><br><br><br>
+<section id="about">
+  <h2>About Lord Shiva (Mahadev)</h2>
+  <p>
+    Lord Shiva, also known as Mahadev, Bholenath, and Neelkanth, is one of the
+    principal deities of Hinduism and the supreme yogi of the universe.
+    He represents the destruction of ignorance, ego, and negativity, making
+    way for transformation, renewal, and spiritual awakening.
+  </p>
+  <p style="margin-top:15px;">
+    Seated in deep meditation on Mount Kailash, Lord Shiva symbolizes perfect
+    balance between stillness and cosmic energy. The crescent moon on his head
+    represents time, the river Ganga flowing from his hair signifies purity,
+    and the serpent around his neck shows mastery over fear and death.
+  </p>
+  <p style="margin-top:15px;">
+    Mahashivratri is celebrated as the sacred night when devotees seek Shiva’s
+    blessings through fasting, meditation, and chanting <strong>“Om Namah Shivaya”</strong>.
+    It is believed that sincere devotion on this night leads to inner peace,
+    liberation, and divine consciousness.
+  </p>
+</section>
+
+
+<section id="family">
+  <h2>Divine Family</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="siv\siv.jpg" alt="Lord Shiva">
+      <h3>Lord Shiva</h3>
+      <p>Supreme consciousness and cosmic protector of the universe.</p>
+    </div>
+
+    <div class="card">
+      <img src="siv\parvati.jpg" alt="Goddess Parvati">
+      <h3>Goddess Parvati</h3>
+      <p>Divine Shakti, universal mother, symbol of love and strength.</p>
+    </div>
+
+    <div class="card">
+      <img src="siv\ganesh.jpg" alt="Lord Ganesha">
+      <h3>Lord Ganesha</h3>
+      <p>Remover of obstacles and god of wisdom and intellect.</p>
+    </div>
+
+    <div class="card">
+      <img src="siv\kartik.jpg" alt="Lord Kartikeya">
+      <h3>Lord Kartikeya</h3>
+      <p>God of courage, war, leadership, and victory.</p>
+    </div>
+
+    <div class="card">
+      <img src="siv\nandi.jpg" alt="Nandi">
+      <h3>Nandi</h3>
+      <p>Sacred bull, symbol of devotion, strength, and righteousness.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="rituals">
+  <h2>Mahashivratri Rituals</h2>
+
+  <div class="timeline">
+
+    <div>
+      <strong>Fasting (Vrat)</strong> – 
+      Devotees observe day-long or night-long fast to purify body, mind, and soul.
+    </div>
+
+    <div>
+      <strong>Shivling Abhishekam</strong> – 
+      Holy bathing of Shivling using milk, water, honey, curd, ghee, and Ganga jal
+      to cleanse negative energies.
+    </div>
+
+    <div>
+      <strong>Bilva Patra Offering</strong> – 
+      Offering sacred Bilva leaves is believed to please Lord Shiva
+      and remove past sins.
+    </div>
+
+    <div>
+      <strong>Rudrabhishek</strong> – 
+      Special Vedic ritual performed with chanting of Rudra mantras
+      for health, wealth, and spiritual growth.
+    </div>
+
+    <div>
+      <strong>Jagran (Night Vigil)</strong> – 
+      Staying awake all night in meditation, bhajans, and mantra chanting,
+    seeking divine blessings.
+    </div>
+
+    <div>
+      <strong>Chanting of Mantras</strong> – 
+      Continuous chanting of “ॐ नमः शिवाय” and Mahamrityunjaya Mantra
+      elevates spiritual consciousness.
+    </div>
+
+    <div>
+      <strong>Temple Darshan</strong> – 
+      Visiting Shiva temples and participating in special Mahashivratri aartis
+      and pujas.
+    </div>
+
+    <div>
+      <strong>Charity & Seva</strong> – 
+      Donating food, clothes, and essentials to the needy
+      brings blessings and spiritual merit.
+    </div>
+
+  </div>
+</section>
+
+
+<section id="temples">
+  <h2>12 Jyotirlingas of Lord Shiva</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="jyotirlingas\somnath.jpg" alt="Somnath Temple">
+      <h3>Somnath</h3>
+      <p>Prabhas Patan, Gujarat – First Jyotirlinga of India.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Mallikarjuna.jpg" alt="Mallikarjuna Temple">
+      <h3>Mallikarjuna</h3>
+      <p>Srisailam, Andhra Pradesh – Shiva with Parvati.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Mahakaleshwar.jpg" alt="Mahakaleshwar Temple">
+      <h3>Mahakaleshwar</h3>
+      <p>Ujjain, MP – South-facing Jyotirlinga.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Omkareshwar.jpg" alt="Omkareshwar Temple">
+      <h3>Omkareshwar</h3>
+      <p>Narmada River, MP – ॐ-shaped island.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Kedarnath.jpg "alt="Kedarnath Temple">
+      <h3>Kedarnath</h3>
+      <p>Uttarakhand – Himalayan Jyotirlinga.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Bhimashankar Temple.jpg" alt="Bhimashankar Temple">
+      <h3>Bhimashankar</h3>
+      <p>Maharashtra – Origin of Bhima River.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Kashi Vishwanath.jpg" alt="Kashi Vishwanath Temple">
+      <h3>Kashi Vishwanath</h3>
+      <p>Varanasi – Moksha-giving temple.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Trimbakeshwar.jpg" alt="Trimbakeshwar Temple">
+      <h3>Trimbakeshwar</h3>
+      <p>Nashik – Origin of Godavari River.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Vaidyanath.jpg" alt="Vaidyanath Temple">
+      <h3>Vaidyanath</h3>
+      <p>Deoghar, Jharkhand – Healer of all diseases.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Nageshwar.jpg" alt="Nageshwar Temple">
+      <h3>Nageshwar</h3>
+      <p>Dwarka, Gujarat – Protection from poison.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Rameshwaram.jpg" alt="Rameshwaram Temple">
+      <h3>Rameshwaram</h3>
+      <p>Tamil Nadu – Worshipped by Lord Rama.</p>
+    </div>
+
+    <div class="card">
+      <img src="jyotirlingas\Grishneshwar.jpg" alt="Grishneshwar Temple">
+      <h3>Grishneshwar</h3>
+      <p>Aurangabad – Near Ellora Caves.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="mantra">
+  <h2>Sacred Mantras of Lord Shiva</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>ॐ नमः शिवाय</h3>
+      <p>
+        The most powerful Shiva mantra. It purifies the soul,
+        removes negativity, and leads toward inner peace and liberation.
+      </p>
+      <p><em>Meaning:</em> I bow to Lord Shiva, the supreme consciousness.</p>
+    </div>
+
+    <div class="card">
+      <h3>महा मृत्युंजय मंत्र</h3>
+      <p>
+        ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् ।<br>
+        उर्वारुकमिव बन्धनान् मृत्योर्मुक्षीय मामृतात् ॥
+      </p>
+      <p>
+        Chanting this mantra brings health, protection,
+        and victory over fear and death.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>शिव गायत्री मंत्र</h3>
+      <p>
+        ॐ तत्पुरुषाय विद्महे महादेवाय धीमहि ।<br>
+        तन्नो रुद्रः प्रचोदयात् ॥
+      </p>
+      <p>
+        Enhances wisdom, clarity of thought,
+        and spiritual enlightenment.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>रुद्र मंत्र</h3>
+      <p>
+        ॐ नमो भगवते रुद्राय ॥
+      </p>
+      <p>
+        Invokes Lord Rudra for courage,
+        strength, and removal of fear.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="symbols">
+  <h2>Sacred Symbols of Lord Shiva</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="symbols\Trishul.jpg" alt="Trishul">
+      <h3>Trishul</h3>
+      <p>
+        Represents creation, preservation, and destruction —
+        the three fundamental forces of the universe.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="symbols\Damru.jpg" alt="Damru">
+      <h3>Damru</h3>
+      <p>
+        The cosmic sound of creation, rhythm of time,
+        and source of sacred vibrations.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="symbols\Third Eye.jpg" alt="Third Eye of Shiva">
+      <h3>Third Eye</h3>
+      <p>
+        Symbol of supreme wisdom, inner vision,
+        and destruction of ignorance.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  © 2026 • Mahashivratri Informative Website 🔱
+   Designed with ❤️ by <b>Jada Prakash</b>
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("show");
+}
+</script>
+<script>
+  const song = document.getElementById("shivSong");
+
+  function toggleSound(){
+    if(song.muted){
+      song.muted = false;
+      event.target.innerHTML = "🔊";
+    }else{
+      song.muted = true;
+      event.target.innerHTML = "🔇";
+    }
+  }
+</script>
+
+
+</body>
+</html>
